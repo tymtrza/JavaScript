@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza KOD zadanie 18</title>
+</head>
+<body>
+<textarea cols="100" rows="30" readonly>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Trza Zadanie 18&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style="color:navy;font-size:40px;"&gt;
+&lt;script language="JavaScript"&gt;
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+function suma_trz(a, b)
+{
+return a + b;
+}
+function odejmowanie_trz(a, b)
+{
+return a - b;
+}
+function mnozenie_trz(a, b)
+{
+return a * b;
+}
+function od_kwadratu_trz(a, b)
+{
+return a+"^2 = "+(a*a)+"&lt;br&gt;"+b+"^2 = "+(b*b);
+}
+function reszta_z_dzielenia_a_przez_b_trz(a, b)
+{
+return a % b;
+}
+document.write("suma="+suma_trz(a,b)+"&lt;br&gt;");
+document.write("odejmowanie="+odejmowanie_trz(a,b)+"&lt;br&gt;");
+document.write("mnozenie="+mnozenie_trz(a,b)+"&lt;br&gt;");
+document.write(od_kwadratu_trz(a,b)+"&lt;br&gt;");
+document.write("reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_trz(a,b)+"&lt;br&gt;");
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

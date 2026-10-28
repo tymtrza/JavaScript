@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza Zadanie 11</title>
+</head>
+<body>
+<div style="color:green;font-size:45px;">
+<script language="JavaScript">
+var D1_trz=prompt("Data1=","");
+var D2_trz=prompt("Data2=","");
+var sekund;
+var a=parseFloat(D1_trz);
+var b=parseFloat(D2_trz);
+sekund=(a-b)*24*60*60;
+document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+function okno_zamknij_trza()
+{
+window.close()
+}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_trza()"/>
+</body>
+</html>

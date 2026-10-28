@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza Zadanie 20</title>
+<script type="text/javascript">
+function AB_trz(xa_trz, ya_trz, xb_trz, yb_trz)
+{
+return Math.sqrt(Math.pow(xb_trz-xa_trz,2)+Math.pow(yb_trz-ya_trz,2));
+}
+function BC_trz(xb_trz, yb_trz, xc_trz, yc_trz)
+{
+return Math.sqrt(Math.pow(xc_trz-xb_trz,2)+Math.pow(yc_trz-yb_trz,2));
+}
+function AC_trz(xa_trz, ya_trz, xc_trz, yc_trz)
+{
+return Math.sqrt(Math.pow(xc_trz-xa_trz,2)+Math.pow(yc_trz-ya_trz,2));
+}
+function oblicz_trz()
+{
+var xa_trz=parseFloat(document.getElementById("xa").value);
+var ya_trz=parseFloat(document.getElementById("ya").value);
+var xb_trz=parseFloat(document.getElementById("xb").value);
+var yb_trz=parseFloat(document.getElementById("yb").value);
+var xc_trz=parseFloat(document.getElementById("xc").value);
+var yc_trz=parseFloat(document.getElementById("yc").value);
+var tekst="AB = "+AB_trz(xa_trz,ya_trz,xb_trz,yb_trz).toFixed(2)+"<br>";
+tekst=tekst+"BC = "+BC_trz(xb_trz,yb_trz,xc_trz,yc_trz).toFixed(2)+"<br>";
+tekst=tekst+"AC = "+AC_trz(xa_trz,ya_trz,xc_trz,yc_trz).toFixed(2)+"<br>";
+document.getElementById("wynik").innerHTML=tekst;
+}
+</script>
+</head>
+<body>
+<form name="formularz">
+Punkt A: x=<input size="5" id="xa"> y=<input size="5" id="ya"><br><br>
+Punkt B: x=<input size="5" id="xb"> y=<input size="5" id="yb"><br><br>
+Punkt C: x=<input size="5" id="xc"> y=<input size="5" id="yc"><br><br>
+<input type="button" value="Oblicz boki" onclick="oblicz_trz()">
+</form>
+<div style="color:blue;font-size:30px;" id="wynik"></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza Zadanie 16</title>
+</head>
+<body>
+<div style="color:navy;font-size:2.4vw;">
+<script language="JavaScript">
+var A_trz=parseFloat(prompt("Podaj pierwszą liczbę A=",""));
+var B_trz=parseFloat(prompt("Podaj drugą liczbę B=",""));
+var a3_trz=A_trz*A_trz*A_trz;
+var t2_trz=3*A_trz*A_trz*B_trz;
+var t3_trz=3*A_trz*B_trz*B_trz;
+var b3_trz=B_trz*B_trz*B_trz;
+var wynik_trz=a3_trz+t2_trz+t3_trz+b3_trz;
+document.write("wczytane liczby: A="+A_trz+" B="+B_trz+"<br>");
+document.write("("+A_trz+" + "+B_trz+")^3= "+A_trz+"^3 + 3*(("+A_trz+")^2)*("+B_trz+") + 3*("+A_trz+")*(("+B_trz+")^2) + "+B_trz+"^3 = "+a3_trz+" + "+t2_trz+" + "+t3_trz+" + "+b3_trz+" = "+wynik_trz+"<br>");
+</script>
+</div>
+</body>
+</html>

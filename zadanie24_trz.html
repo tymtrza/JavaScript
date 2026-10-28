@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza Zadanie 24</title>
+</head>
+<body>
+<div style="font-size:30px;">
+<script language="JavaScript">
+var x1_trz=parseFloat(prompt("x1=",""));
+var x2_trz=parseFloat(prompt("x2=",""));
+document.write("wczytane liczby: x1="+x1_trz+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2="+x2_trz+"<br><br>");
+var y1_trz=Math.pow(x1_trz,x2_trz);
+var y2_trz=Math.sqrt(x1_trz*x1_trz+x2_trz*x2_trz);
+var y3_trz=Math.abs(x1_trz-x2_trz);
+document.write("y1 = x1^x2 = "+y1_trz.toFixed(2)+"<br>");
+document.write("y2 = sqrt(x1^2 + x2^2) = "+y2_trz.toFixed(2)+"<br>");
+document.write("y3 = |x1 - x2| = "+y3_trz.toFixed(2)+"<br><br>");
+var rad_trz=(x1_trz*Math.PI)/180;
+document.write("wczytane liczby:<br>");
+document.write("w stopniach x1="+x1_trz+" [stopniach] x1="+rad_trz.toFixed(2)+" [radianach]<br><br>");
+document.write("sin(x1) = "+Math.sin(rad_trz).toFixed(2)+"<br>");
+document.write("cos(x1) = "+Math.cos(rad_trz).toFixed(2)+"<br>");
+document.write("tan(x1) = "+Math.tan(rad_trz).toFixed(2)+"<br><br>");
+document.write("ln(x1) = "+Math.log(x1_trz).toFixed(2)+"<br>");
+document.write("e^x2 = "+Math.exp(x2_trz).toFixed(2)+"<br>");
+</script>
+</div>
+</body>
+</html>

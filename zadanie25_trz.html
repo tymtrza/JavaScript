@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza Zadanie 25</title>
+</head>
+<body>
+<script language="JavaScript">
+var No_trz=parseFloat(prompt("No [sztuk]=",""));
+var t_trz=parseFloat(prompt("t [lat]=",""));
+var T_trz=parseFloat(prompt("T1/2 [lat]=",""));
+var lambda_trz=Math.log(2)/T_trz;
+var N_trz=No_trz*Math.pow(Math.E,-lambda_trz*t_trz);
+document.write('<div style="color:#8B008B;font-size:34px;">');
+document.write("No = "+No_trz.toFixed(2)+" sztuk<br>");
+document.write("t = "+t_trz.toFixed(2)+" lat<br>");
+document.write("T1/2 = "+T_trz.toFixed(2)+" lat<br><br>");
+document.write("lambda = "+lambda_trz.toFixed(7)+" 1/rok<br>");
+document.write('</div><div style="color:#D2691E;font-size:40px;">');
+document.write("N = "+N_trz.toFixed(2)+" sztuk<br>");
+document.write("</div>");
+</script>
+</body>
+</html>

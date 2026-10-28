@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza KOD zadanie 11</title>
+</head>
+<body>
+<textarea cols="100" rows="30" readonly>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Trza Zadanie 11&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style="color:green;font-size:45px;"&gt;
+&lt;script language="JavaScript"&gt;
+var D1_trz=prompt("Data1=","");
+var D2_trz=prompt("Data2=","");
+var sekund;
+var a=parseFloat(D1_trz);
+var b=parseFloat(D2_trz);
+sekund=(a-b)*24*60*60;
+document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"&lt;br&gt;");
+function okno_zamknij_trza()
+{
+window.close()
+}
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;input type="button" value="zamknij okno" onclick="okno_zamknij_trza()"/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

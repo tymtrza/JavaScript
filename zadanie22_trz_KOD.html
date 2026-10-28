@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza KOD zadanie 22</title>
+</head>
+<body>
+<textarea cols="100" rows="30" readonly>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Trza Zadanie 22&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+function Pole_trza(a_trz, b_trz)
+{
+return a_trz*b_trz;
+}
+function obwod_trza(a_trz, b_trz)
+{
+return 2*a_trz+2*b_trz;
+}
+function oblicz_trz()
+{
+var a_trz=parseFloat(document.formularz.a_dana_trz.value);
+var b_trz=parseFloat(document.formularz.b_dana_trz.value);
+var p_trz=Pole_trza(a_trz,b_trz);
+var o_trz=obwod_trza(a_trz,b_trz);
+document.formularz.pole.value=p_trz.toFixed(2);
+document.formularz.obw.value=o_trz.toFixed(2);
+document.getElementById("wyprowadz_pole_trz").innerHTML="Pole = "+p_trz.toFixed(2);
+document.getElementById("wyprowadz_obwod_trz").innerHTML="Obwód = "+o_trz.toFixed(2);
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Prostokąt - pole i obwód&lt;/h2&gt;
+&lt;form name="formularz"&gt;
+a=&lt;input size="6" name="a_dana_trz"&gt;
+b=&lt;input size="6" name="b_dana_trz"&gt;
+&lt;input type="button" value="oblicz" onclick="oblicz_trz()"&gt;
+&lt;br&gt;&lt;br&gt;
+Pole=&lt;input size="8" name="pole"&gt;
+Obwód=&lt;input size="8" name="obw"&gt;
+&lt;/form&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td id="wyprowadz_pole_trz"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td id="wyprowadz_obwod_trz"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

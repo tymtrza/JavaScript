@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza KOD zadanie 25</title>
+</head>
+<body>
+<textarea cols="100" rows="30" readonly>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Trza Zadanie 25&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script language="JavaScript"&gt;
+var No_trz=parseFloat(prompt("No [sztuk]=",""));
+var t_trz=parseFloat(prompt("t [lat]=",""));
+var T_trz=parseFloat(prompt("T1/2 [lat]=",""));
+var lambda_trz=Math.log(2)/T_trz;
+var N_trz=No_trz*Math.pow(Math.E,-lambda_trz*t_trz);
+document.write('&lt;div style="color:#8B008B;font-size:34px;"&gt;');
+document.write("No = "+No_trz.toFixed(2)+" sztuk&lt;br&gt;");
+document.write("t = "+t_trz.toFixed(2)+" lat&lt;br&gt;");
+document.write("T1/2 = "+T_trz.toFixed(2)+" lat&lt;br&gt;&lt;br&gt;");
+document.write("lambda = "+lambda_trz.toFixed(7)+" 1/rok&lt;br&gt;");
+document.write('&lt;/div&gt;&lt;div style="color:#D2691E;font-size:40px;"&gt;');
+document.write("N = "+N_trz.toFixed(2)+" sztuk&lt;br&gt;");
+document.write("&lt;/div&gt;");
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza Zadanie 26</title>
+<script type="text/javascript">
+function Pow_trza(a_trz, b_trz, h_trz)
+{
+return (a_trz+b_trz)*h_trz/2;
+}
+function Obw_trza(a_trz, b_trz, h_trz)
+{
+var d_trz=Math.abs(a_trz-b_trz)/2;
+var ramie_trz=Math.sqrt(d_trz*d_trz+h_trz*h_trz);
+return a_trz+b_trz+2*ramie_trz;
+}
+function oblicz_trz()
+{
+var a_trz=parseFloat(document.formularz.dolna.value);
+var b_trz=parseFloat(document.formularz.gorna.value);
+var h_trz=parseFloat(document.formularz.wysokosc.value);
+var p_trz=Pow_trza(a_trz,b_trz,h_trz);
+var o_trz=Obw_trza(a_trz,b_trz,h_trz);
+document.formularz.pole.value=p_trz.toFixed(2);
+document.formularz.obwod.value=o_trz.toFixed(2);
+var okno=window.open("","wynik_trapez","width=350,height=200,top=200,left=500");
+okno.document.write("<h3>Trapez równoramienny</h3>");
+okno.document.write("Pole = "+p_trz.toFixed(2)+"<br>");
+okno.document.write("Obwód = "+o_trz.toFixed(2)+"<br>");
+okno.document.close();
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+document.write("<h2>Trapez równoramienny - pole i obwód</h2>");
+</script>
+<form name="formularz">
+Dolna podstawa: <input size="8" name="dolna"><br><br>
+Górna podstawa: <input size="8" name="gorna"><br><br>
+Wysokość: <input size="8" name="wysokosc"><br><br>
+<input type="button" value="oblicz" onclick="oblicz_trz()"><br><br>
+Pole: <input size="8" name="pole"><br><br>
+Obwód: <input size="8" name="obwod">
+</form>
+</body>
+</html>

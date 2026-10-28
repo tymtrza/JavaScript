@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza KOD zadanie 23</title>
+</head>
+<body>
+<textarea cols="100" rows="30" readonly>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Trza Zadanie 23&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+function dlugosc_trz(D_trz, X_trz)
+{
+return Math.sqrt(D_trz*D_trz+X_trz*X_trz);
+}
+function kat_nachylenia_trz(D_trz, X_trz)
+{
+var rad_trz=Math.atan(D_trz/X_trz);
+return rad_trz*180/Math.PI;
+}
+function oblicz_trz()
+{
+var D_trz=parseFloat(document.formularz.D.value);
+var X_trz=parseFloat(document.formularz.X.value);
+document.formularz.dl.value=dlugosc_trz(D_trz,X_trz).toFixed(2);
+document.formularz.kat.value=kat_nachylenia_trz(D_trz,X_trz).toFixed(2);
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Drabina oparta o mur&lt;/h2&gt;
+&lt;form name="formularz"&gt;
+D - wysokość oparcia drabiny [m]: &lt;input size="8" name="D"&gt;&lt;br&gt;&lt;br&gt;
+X - odległość oparcia drabiny [m]: &lt;input size="8" name="X"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="button" value="oblicz" onclick="oblicz_trz()"&gt;&lt;br&gt;&lt;br&gt;
+Długość drabiny [m]: &lt;input size="8" name="dl"&gt;&lt;br&gt;&lt;br&gt;
+Kąt nachylenia drabiny [stopnie]: &lt;input size="8" name="kat"&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

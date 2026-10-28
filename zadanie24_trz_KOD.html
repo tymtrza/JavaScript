@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza KOD zadanie 24</title>
+</head>
+<body>
+<textarea cols="100" rows="30" readonly>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Trza Zadanie 24&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style="font-size:30px;"&gt;
+&lt;script language="JavaScript"&gt;
+var x1_trz=parseFloat(prompt("x1=",""));
+var x2_trz=parseFloat(prompt("x2=",""));
+document.write("wczytane liczby: x1="+x1_trz+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;x2="+x2_trz+"&lt;br&gt;&lt;br&gt;");
+var y1_trz=Math.pow(x1_trz,x2_trz);
+var y2_trz=Math.sqrt(x1_trz*x1_trz+x2_trz*x2_trz);
+var y3_trz=Math.abs(x1_trz-x2_trz);
+document.write("y1 = x1^x2 = "+y1_trz.toFixed(2)+"&lt;br&gt;");
+document.write("y2 = sqrt(x1^2 + x2^2) = "+y2_trz.toFixed(2)+"&lt;br&gt;");
+document.write("y3 = |x1 - x2| = "+y3_trz.toFixed(2)+"&lt;br&gt;&lt;br&gt;");
+var rad_trz=(x1_trz*Math.PI)/180;
+document.write("wczytane liczby:&lt;br&gt;");
+document.write("w stopniach x1="+x1_trz+" [stopniach] x1="+rad_trz.toFixed(2)+" [radianach]&lt;br&gt;&lt;br&gt;");
+document.write("sin(x1) = "+Math.sin(rad_trz).toFixed(2)+"&lt;br&gt;");
+document.write("cos(x1) = "+Math.cos(rad_trz).toFixed(2)+"&lt;br&gt;");
+document.write("tan(x1) = "+Math.tan(rad_trz).toFixed(2)+"&lt;br&gt;&lt;br&gt;");
+document.write("ln(x1) = "+Math.log(x1_trz).toFixed(2)+"&lt;br&gt;");
+document.write("e^x2 = "+Math.exp(x2_trz).toFixed(2)+"&lt;br&gt;");
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

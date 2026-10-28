@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza KOD zadanie 27</title>
+</head>
+<body>
+<textarea cols="100" rows="30" readonly>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Trza Zadanie 27&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+function wysokosc_trz(s_trz, odl_trz)
+{
+return Math.sqrt(s_trz*s_trz-odl_trz*odl_trz);
+}
+function kat_startu_trz(s_trz, odl_trz)
+{
+return Math.acos(odl_trz/s_trz)*180/Math.PI;
+}
+function oblicz_trz()
+{
+var odl_trz=parseFloat(document.formularz.odl_trz.value);
+var s_trz=parseFloat(document.formularz.s_trz.value);
+var h_trz=wysokosc_trz(s_trz,odl_trz);
+var kat_trz=kat_startu_trz(s_trz,odl_trz);
+document.formularz.h_trz.value=h_trz.toFixed(2);
+document.formularz.kat_trz.value=kat_trz.toFixed(2);
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Artur, Dawid i samolot&lt;/h2&gt;
+&lt;form name="formularz"&gt;
+Odległość Artura od Dawida odl [m]: &lt;input size="8" name="odl_trz"&gt;&lt;br&gt;&lt;br&gt;
+Droga samolotu s [m]: &lt;input size="8" name="s_trz"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="button" value="oblicz" onclick="oblicz_trz()"&gt;&lt;br&gt;&lt;br&gt;
+Wysokość h [m]: &lt;input size="8" name="h_trz"&gt;&lt;br&gt;&lt;br&gt;
+Kąt startu [stopnie]: &lt;input size="8" name="kat_trz"&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

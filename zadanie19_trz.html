@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza Zadanie 19</title>
+<script type="text/javascript">
+function Pole_trza()
+{
+var a_trz=parseFloat(document.getElementById('dlugosc').value);
+var b_trz=a_trz*a_trz;
+document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_trz.toFixed(2)+" cm^2";
+}
+function obwod_trza()
+{
+var a_trz=parseFloat(document.getElementById('dlugosc').value);
+var b_trz=4*a_trz;
+document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_trz.toFixed(2)+" cm";
+}
+</script>
+</head>
+<body>
+<h1>Wszystko o KWADRACIE</h1><br><br>
+Podaj długość boku: <input type="text" id="dlugosc" value=""> cm<br><br><br>
+<input type="button" name="pole" value="Oblicz pole" onclick="Pole_trza()"><br><br>
+<input type="button" name="obwod" value="Oblicz obwod" onclick="obwod_trza()"><br><br>
+<div style="color:red;font-size:50px;" id="nazwa"></div>
+</body>
+</html>

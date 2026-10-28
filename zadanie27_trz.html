@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trza Zadanie 27</title>
+<script type="text/javascript">
+function wysokosc_trz(s_trz, odl_trz)
+{
+return Math.sqrt(s_trz*s_trz-odl_trz*odl_trz);
+}
+function kat_startu_trz(s_trz, odl_trz)
+{
+return Math.acos(odl_trz/s_trz)*180/Math.PI;
+}
+function oblicz_trz()
+{
+var odl_trz=parseFloat(document.formularz.odl_trz.value);
+var s_trz=parseFloat(document.formularz.s_trz.value);
+var h_trz=wysokosc_trz(s_trz,odl_trz);
+var kat_trz=kat_startu_trz(s_trz,odl_trz);
+document.formularz.h_trz.value=h_trz.toFixed(2);
+document.formularz.kat_trz.value=kat_trz.toFixed(2);
+}
+</script>
+</head>
+<body>
+<h2>Artur, Dawid i samolot</h2>
+<form name="formularz">
+Odległość Artura od Dawida odl [m]: <input size="8" name="odl_trz"><br><br>
+Droga samolotu s [m]: <input size="8" name="s_trz"><br><br>
+<input type="button" value="oblicz" onclick="oblicz_trz()"><br><br>
+Wysokość h [m]: <input size="8" name="h_trz"><br><br>
+Kąt startu [stopnie]: <input size="8" name="kat_trz">
+</form>
+</body>
+</html>
